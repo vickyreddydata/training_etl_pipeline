@@ -1,0 +1,28 @@
+2024-01-13 00:35:44,425 [INFO] extraction.extraction_functional_enhanced: ./data/yellow_tripdata_2022-01.parquet : extracted 2463931 records from the parguet file
+2024-01-13 00:35:44,430 [INFO] extraction.extraction_functional_enhanced: ./data/h9gi-nx95.csv : extracted 500 records from the csv file
+2024-01-13 00:35:44,430 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): data.cityofnewyork.us:443
+2024-01-13 00:35:45,072 [DEBUG] urllib3.connectionpool: https://data.cityofnewyork.us:443 "GET /resource/h9gi-nx95.json?$limit=500 HTTP/1.1" 200 None
+2024-01-13 00:35:45,072 [INFO] extraction.extraction_functional_enhanced: 200 - ok : while invoking the api https://data.cityofnewyork.us/resource/h9gi-nx95.json?$limit=500
+2024-01-13 00:35:45,085 [INFO] extraction.extraction_functional_enhanced: 200- extracted 500 records from the csv file
+2024-01-13 00:35:45,109 [INFO] extraction.extraction_functional_enhanced: ./data/movies.sqlite- read 4773 records from the table: movies
+2024-01-13 00:35:45,333 [INFO] extraction.extraction_functional_enhanced: https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)- read 214 records from the page: https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)
+2024-01-13 00:37:38,098 [INFO] extraction.extraction_functional_enhanced: ./data/yellow_tripdata_2022-01.parquet : extracted 2463931 records from the parguet file
+2024-01-13 00:37:38,103 [INFO] extraction.extraction_functional_enhanced: ./data/h9gi-nx95.csv : extracted 500 records from the csv file
+2024-01-13 00:37:38,103 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): data.cityofnewyork.us:443
+2024-01-13 00:37:38,684 [DEBUG] urllib3.connectionpool: https://data.cityofnewyork.us:443 "GET /resource/h9gi-nx95.json?$limit=500 HTTP/1.1" 200 None
+2024-01-13 00:37:38,685 [INFO] extraction.extraction_functional_enhanced: 200 - ok : while invoking the api https://data.cityofnewyork.us/resource/h9gi-nx95.json?$limit=500
+2024-01-13 00:37:38,702 [INFO] extraction.extraction_functional_enhanced: 200- extracted 500 records from the csv file
+2024-01-13 00:37:38,705 [ERROR] extraction.extraction_functional_enhanced: .data/movies.sqlite : - exception unable to open database file encountered while reading data from the table: movies
+Traceback (most recent call last):
+  File "/Users/vicky/Documents/python-etl-example/Building-ETL-Pipelines-with-Python/Chapters/chapter_04/extraction/extraction_functional_enhanced.py", line 61, in source_data_from_table
+    with sqlite3.connect(db_name) as conn:
+sqlite3.OperationalError: unable to open database file
+2024-01-13 00:37:38,936 [INFO] extraction.extraction_functional_enhanced: https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)- read 214 records from the page: https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)
+2024-01-13 00:38:39,484 [INFO] extraction.extraction_functional_enhanced: ./data/yellow_tripdata_2022-01.parquet : extracted 2463931 records from the parguet file
+2024-01-13 00:38:39,488 [INFO] extraction.extraction_functional_enhanced: ./data/h9gi-nx95.csv : extracted 500 records from the csv file
+2024-01-13 00:38:39,489 [DEBUG] urllib3.connectionpool: Starting new HTTPS connection (1): data.cityofnewyork.us:443
+2024-01-13 00:38:40,030 [DEBUG] urllib3.connectionpool: https://data.cityofnewyork.us:443 "GET /resource/h9gi-nx95.json?$limit=500 HTTP/1.1" 200 None
+2024-01-13 00:38:40,030 [INFO] extraction.extraction_functional_enhanced: 200 - ok : while invoking the api https://data.cityofnewyork.us/resource/h9gi-nx95.json?$limit=500
+2024-01-13 00:38:40,038 [INFO] extraction.extraction_functional_enhanced: 200- extracted 500 records from the csv file
+2024-01-13 00:38:40,057 [INFO] extraction.extraction_functional_enhanced: ./data/movies.sqlite- read 4773 records from the table: movies
+2024-01-13 00:38:40,261 [INFO] extraction.extraction_functional_enhanced: https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)- read 214 records from the page: https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)
